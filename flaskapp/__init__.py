@@ -14,4 +14,7 @@ def create_app():
 
     db.init_app(app)
 
+    from flaskapp.routes import register_routes
+    register_routes(app, db)
+
     return app
