@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+	{% if users|length > 0 %}
+		<h2>List of Users</h2>
+		{% for user in users %}
+			<li>user</li>
+		{%% endfor %}
+	{% else %}
+		<p>No user in the database. Please create new user</p>
+	{% endif %}
+{% endblock content %}

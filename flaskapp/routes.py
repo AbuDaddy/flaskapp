@@ -7,4 +7,4 @@ def register_routes(app, db):
     def home():
 
         users = User.query.all()
-        return render_template('layout.html', title='Blue', users=users)
+        return render_template('home.html', title='Blue', users=users)
